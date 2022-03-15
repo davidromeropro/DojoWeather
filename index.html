@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Romero">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather Forcast</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="nav-container">
+            <h1 class="nav-title">
+                DojoWeather
+            </h1>
+            <ul class="nav-links">
+                <li onclick="loadReport('Burbank')"><a>Burbank</a></li>
+                <li onclick="loadReport('Chicago')"><a>Chicago</a></li>
+                <li onclick="loadReport('Dallas')"><a>Dallas</a></li>
+            </ul>
+        </div>
+        <div class="main-container">
+            <div class="main-header">
+                <h2 class="main-title">
+                    San Jose
+                </h2>
+                <div>
+                    <span>
+                        show temperature in
+                    </span>
+                    <select id="temperature-units" onchange="convertUnits(this)">
+                        <option value="celcius">°C</option>
+                        <option value="farenheit">°F</option>
+                    </select>
+                </div>
+            </div>
+            <div class="main-body">
+                <div class="weather-card">
+                    <h2>Today</h2>
+                    <img src="assets/some_rain.png" alt="some-rain">
+                    <span>some rain</span>
+                    <div class="temperature-container">
+                        <span class="temperature-min">24°</span>
+                        <span class="temperature-max">18°</span>
+                    </div>
+                </div>
+                <div class="weather-card">
+                    <h2>Tomorrow</h2>
+                    <img src="assets/some_sun.png" alt="some-rain">
+                    <span>some sun</span>
+                    <div class="temperature-container">
+                        <span class="temperature-min">27°</span>
+                        <span class="temperature-max">19°</span>
+                    </div>
+                </div>
+                <div class="weather-card">
+                    <h2>Friday</h2>
+                    <img src="assets/some_clouds.png" alt="some-rain">
+                    <span>some clouds</span>
+                    <div class="temperature-container">
+                        <span class="temperature-min">21°</span>
+                        <span class="temperature-max">16°</span>
+                    </div>
+                </div>
+                <div class="weather-card">
+                    <h2>Saturday</h2>
+                    <img src="assets/some_sun.png" alt="some-rain">
+                    <span>some sun</span>
+                    <div class="temperature-container">
+                        <span class="temperature-min">26°</span>
+                        <span class="temperature-max">21°</span>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer">
+                <div class="alert-container">
+                    <img src="assets/cookie.png" alt="cookie">
+                    <div class="message-container">
+                        <h3 class="message-tittle">Stop! Cookie time</h3>
+                        <p>
+                            We use cookies (sadly not the edible ones) to presonalize <br> content and ads, to provide social media features and to <br> analyse our traffic. <a>Read more...</a>
+                        </p>
+                    </div>
+                    <input type="button" value="I Accept" class="btn" onclick="acceptCookie(this)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+li, .main-title, .weather-card h2 {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.main-title{
+    font-size: 2em;
+}
+
+.nav-container{
+    background-color:rgb(160, 198, 245);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-title{
+    flex: 1;
+}
+
+.nav-links{
+    flex: 1;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-container{
+    padding: 1% 20%;
+}
+
+.main-container{
+    margin: 0% 20%;
+}
+
+.main-footer{
+    margin-top: 2%;
+}
+
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding: 2% 0%;
+    margin-bottom: 2%;
+}
+
+#temperature-units{
+    padding: 0.25em;
+}
+
+.main-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(238, 238, 238);
+    padding: 1% 4%;
+    height: 20em;
+}
+
+.weather-card img{
+    height: 7em;
+    width: 7em;
+    border-radius: 5em;
+}
+
+.temperature-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.temperature-max, .temperature-min{
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.temperature-max{
+    color: rgb(206, 48, 48);
+}
+
+.temperature-min{
+    color: rgb(28, 120, 224);
+}
+
+.alert-container{
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    background-color: rgb(238, 238, 238);
+    justify-content: space-between;
+    padding: 1% 2%;
+    position: fixed;
+    width: 56%;
+}
+
+.alert-container img{
+    height: 4em;
+}
+
+.alert-container a{
+    color: rgb(16, 85, 146);
+    text-decoration: underline;
+}
+
+.btn{
+    background-color: rgb(160, 198, 245);
+    color: black;
+    box-shadow: 3px 3px black;
+    border: 2px solid black;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
